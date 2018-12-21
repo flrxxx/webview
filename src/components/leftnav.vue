@@ -1,6 +1,6 @@
 <template>
     <div class="leftnav">
-        
+        右边
     </div>
 </template>
 
