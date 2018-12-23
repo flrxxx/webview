@@ -10,11 +10,19 @@ const router = new Router({
     routes:[
         {
             path:'/',
-            redirect: '/index',
+            redirect: '/main',
         },{
-            path:'/index',
-            name:'index',
-            component:resolve => require(['../components/index.vue'],resolve),
+            path:'/main',
+            name:'main',
+            redirect:'index',
+            component:resolve => require(['../components/main.vue'],resolve),
+            children:[
+                {
+                    path:'/index',
+                    name:'index',
+                    component:resolve => require(['../components/page/index.vue'],resolve),
+                },
+            ]
         },
         {
             path:'*',

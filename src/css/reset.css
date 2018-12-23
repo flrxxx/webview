@@ -10,7 +10,7 @@ html,body{
     height: 100%;
 }
 body{
-    overflow-y: auto;
+    overflow-y: hidden;
 }
 img{
     width: 100%;
@@ -22,4 +22,7 @@ a{
 }
 ul,li{
     list-style: none;
+}
+div#app{
+    height: 100%;
 }
